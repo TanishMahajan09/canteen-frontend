@@ -36,14 +36,14 @@ const Login = () => {
           className="h-12 p-4 m-2 border"
           type="email"
           placeholder="Enter Username"
-          required
+          required-
         />
         <input
           ref={password}
           type="password"
           className="h-12 p-4 m-2 border"
           placeholder="Enter Password"
-          required
+          required-
         />
         <select className="h-16 p-4 m-2 border" required ref={loginas}>
           <option value="" disabled selected hidden>

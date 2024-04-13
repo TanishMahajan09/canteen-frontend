@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Canteen from "./Canteen";
 import axios from "axios";
 import ImageCarousel from "./ImageCarousel";
-import image1 from "../public/pu-logo.png";
-import image2 from "../public/pic.jpg";
+import canteen1 from "../public/canteen1.jpeg";
+import canteen2 from "../public/canteen2.webp";
+import canteen3 from "../public/canteen3.jpeg";
 
 const Home = () => {
   const [information, setInformation] = useState([]);
@@ -18,11 +19,11 @@ const Home = () => {
   return (
     <div>
       <h1 className="text-3xl font-extrabold text-center m-4">
-        Welcome to Panjab University Canteens Page
+        Welcome to Panjab University Canteens.
       </h1>
       <h2 className="text-center font-bold text-3xl ">Our Canteens</h2>
       <div>
-        <ImageCarousel images={[image1, image2]} />
+        <ImageCarousel images={[canteen1, canteen2, canteen3]} />
       </div>
       <h2 className="text-center font-bold text-xl ">
         Select a canteen from where you want to eat food.

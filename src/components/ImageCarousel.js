@@ -31,8 +31,7 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
         <img
           src={images[currentIndex]}
           alt={`Image ${currentIndex + 1}`}
-          className="block w-80 m-auto transition-transform duration-300 transform h-96"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          className="h-96 w-96 mx-auto my-2"
         />
       </div>
       <button
